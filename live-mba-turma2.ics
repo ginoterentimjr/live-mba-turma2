@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MBA Gestao Estrategica de Valor//Live T2//PT
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:live-mba-turma2-20261117@ginoterentim.com
+DTSTAMP:20261116T130000Z
+DTSTART:20261117T223000Z
+DTEND:20261118T000000Z
+SUMMARY:Live de lançamento · MBA em Gestão Estratégica de Valor (Turma 2)
+DESCRIPTION:Zoom: https://us02web.zoom.us/j/87863787431?pwd=hevxhkb7rR4VSOkuga5Dsvd0Fn0wYZ.1
+LOCATION:Zoom
+END:VEVENT
+END:VCALENDAR

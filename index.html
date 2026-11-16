@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live de lançamento · MBA em Gestão Estratégica de Valor · Turma 2</title>
+<meta name="description" content="Live gratuita de lançamento da Turma 2 do MBA em Gestão Estratégica de Valor. Terça, 17 de novembro, às 19h30 (Brasília), no Zoom.">
+<meta property="og:title" content="Live de lançamento · MBA em Gestão Estratégica de Valor · Turma 2">
+<meta property="og:description" content="Terça, 17 de novembro, às 19h30 (Brasília), no Zoom. Inscrição gratuita.">
+<meta property="og:image" content="https://ginoterentimjr.github.io/live-mba-turma2/./og.jpg">
+<meta property="og:url" content="https://ginoterentimjr.github.io/live-mba-turma2/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Lora:ital@1&display=swap" rel="stylesheet">
+<style>
+:root{--esc:#1B1512;--claro:#F6F2EC;--lar:#E5662C;--terra:#B04A1C;--tinta:#2A211C;--corpo:#5A5045;--meta:#8D8377;--fil:#E2D9CD;--quadro:#FAF7F1;--creme:#FBEEE5;--ouro:#C9A24D;--pet:#2F6B6F;--ocre:#B5781E;--azul:#35608F;--ameixa:#7A4E6D}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,system-ui,sans-serif;color:var(--corpo);background:var(--claro);font-size:17px;line-height:1.6}
+.w{max-width:1120px;margin:0 auto;padding:0 28px}
+.ic{width:26px;height:26px;flex:none}
+/* topo */
+.topo{position:absolute;top:0;left:0;right:0;z-index:5}
+.topo .w{display:flex;align-items:center;justify-content:space-between;padding-top:22px}
+.marca{display:flex;align-items:center;gap:12px;color:var(--creme);font-weight:700;font-size:13px;letter-spacing:1.4px}
+.marca img{height:30px}
+.topo a.cta-s{color:var(--creme);font-size:13px;font-weight:700;letter-spacing:1.2px;text-decoration:none;border:1px solid rgba(251,238,229,.5);padding:9px 16px;border-radius:30px}
+/* hero */
+.hero{position:relative;min-height:100vh;background:var(--esc) url(./hero.jpg) center/cover no-repeat;color:var(--creme);display:flex;align-items:center}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,21,18,.92) 0%,rgba(27,21,18,.75) 45%,rgba(27,21,18,.25) 100%)}
+.hero .w{position:relative;z-index:2;padding-top:110px;padding-bottom:80px}
+.lock{height:120px;margin-bottom:26px}
+.tarja{display:inline-block;color:var(--lar);font-weight:700;font-size:13px;letter-spacing:3px;margin-bottom:14px}
+h1{font-size:clamp(38px,6vw,66px);line-height:1.04;color:var(--creme);font-weight:700;max-width:760px}
+h1 em{font-style:normal;color:var(--lar)}
+.hero p.lede{font-size:19px;max-width:620px;margin:22px 0 28px;color:#E8DED4}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.chip{display:flex;align-items:center;gap:10px;background:rgba(251,238,229,.08);border:1px solid rgba(251,238,229,.25);padding:10px 16px;border-radius:40px;font-weight:500;font-size:15px}
+.chip .ic{color:var(--lar);width:20px;height:20px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--lar);color:#fff;font-weight:700;font-size:16px;padding:16px 28px;border-radius:40px;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:transform .15s,background .15s}
+.btn:hover{background:var(--terra);transform:translateY(-1px)}
+.btn .ic{width:20px;height:20px}
+.cont{display:flex;gap:14px;margin-top:30px}
+.cont div{text-align:center;min-width:64px}
+.cont b{display:block;font-size:30px;color:var(--creme);line-height:1}
+.cont span{font-size:12px;letter-spacing:1.5px;color:#C9BBAE}
+/* seções */
+section.s{padding:96px 0}
+.sob{display:flex;align-items:center;gap:14px;font-weight:700;font-size:13px;letter-spacing:2px;color:var(--lar);margin-bottom:16px}
+.sob::after{content:"";flex:1;height:1px;background:currentColor;opacity:.6}
+h2{font-size:clamp(28px,3.6vw,40px);line-height:1.15;color:var(--tinta);font-weight:700;max-width:860px;margin-bottom:24px}
+h2 em{font-style:normal;color:var(--lar)}
+.dois{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:start}
+.txt p{margin-bottom:16px;text-align:justify}
+.txt strong{color:var(--tinta)}
+.cartao{background:var(--quadro);border:1px solid var(--fil);border-radius:14px;padding:28px}
+.cit{border-left:4px solid var(--lar);padding-left:18px;color:var(--tinta);font-weight:700;font-size:20px;line-height:1.35}
+.fonte{font-size:13px;color:var(--meta);margin-top:12px}
+.num{font-size:64px;font-weight:700;color:var(--tinta);line-height:1}
+.barra{height:12px;background:#EFE8DF;border-radius:6px;margin:14px 0 8px;overflow:hidden}
+.barra i{display:block;height:100%;width:48%;background:var(--lar)}
+/* números */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:10px 0 40px}
+.stat{background:#fff;border:1px solid var(--fil);border-radius:14px;padding:24px;border-top:4px solid var(--pet)}
+.stat b{display:block;font-size:40px;color:var(--tinta);line-height:1.1}
+.stat span{font-size:15px}
+.trilhas{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.tr{border-radius:12px;padding:18px;color:#fff;min-height:150px}
+.tr small{display:block;font-size:12px;letter-spacing:1.5px;font-weight:700;opacity:.85}
+.tr strong{display:block;font-size:16px;line-height:1.3;margin-top:6px}
+.aviso{margin-top:34px;display:flex;gap:18px;align-items:center;background:var(--tinta);color:var(--creme);border-radius:14px;padding:22px 26px}
+.aviso .disco{background:var(--lar)}
+.disco{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;color:#fff}
+/* live */
+.escura{background:var(--esc);color:#E8DED4}
+.escura h2{color:var(--creme)}
+.itens{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.item{background:#2A221D;border:1px solid #4A3F37;border-radius:14px;padding:24px}
+.item h3{color:var(--creme);font-size:18px;margin:14px 0 6px}
+.item p{font-size:15px}
+.quem{display:flex;gap:22px;align-items:center;margin-top:40px;border-top:1px solid #4A3F37;padding-top:30px}
+.quem p{max-width:860px}
+/* form */
+.form-s{background:var(--terra)}
+.form-s .w{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+.form-s h2,.form-s .sob{color:#fff}
+.form-s h2 em{color:var(--tinta)}
+.form-s .lado p{color:var(--creme);margin-bottom:14px}
+form,.ok{background:#fff;border-radius:18px;padding:34px;box-shadow:0 20px 50px rgba(0,0,0,.18)}
+label{display:block;font-size:14px;font-weight:700;color:var(--tinta);margin:14px 0 6px}
+input[type=text],input[type=email],input[type=tel]{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1.5px solid var(--fil);border-radius:10px;background:var(--quadro);color:var(--tinta)}
+input:focus{outline:none;border-color:var(--lar);background:#fff}
+.lin{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tel{display:flex}
+.tel span{padding:13px 12px;border:1.5px solid var(--fil);border-right:0;border-radius:10px 0 0 10px;background:#EFE8DF;font-weight:700;color:var(--tinta)}
+.tel input{border-radius:0 10px 10px 0}
+.lgpd{display:flex;gap:10px;align-items:flex-start;font-size:13px;margin:18px 0 22px;color:var(--corpo);line-height:1.45}
+.lgpd input{margin-top:3px;accent-color:var(--lar);width:18px;height:18px;flex:none}
+form .btn{width:100%;justify-content:center}
+.erro{color:#B3261E;font-size:14px;margin-top:10px;display:none}
+.ok{display:none;text-align:left}
+.ok h3{font-size:26px;color:var(--tinta);margin:10px 0}
+.ok .disco{background:#5E7D52}
+.ok .acoes{display:flex;flex-direction:column;gap:12px;margin-top:20px}
+.btn.sec{background:#fff;color:var(--tinta);border:1.5px solid var(--fil)}
+.btn.sec:hover{background:var(--quadro)}
+/* rodapé */
+footer{background:var(--esc);color:#A2988C;padding:70px 0 40px;text-align:center}
+footer .frase{font-family:Lora,serif;font-style:italic;font-size:26px;color:var(--creme);max-width:760px;margin:26px auto}
+footer .lock{height:96px;margin:0}
+footer small{display:block;margin-top:24px;font-size:13px}
+footer a{color:var(--lar);text-decoration:none}
+@media (max-width:900px){
+ .dois,.form-s .w{grid-template-columns:1fr;gap:32px}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .trilhas{grid-template-columns:1fr 1fr}
+ .itens{grid-template-columns:1fr}
+ .lin{grid-template-columns:1fr}
+ .hero::after{background:linear-gradient(180deg,rgba(27,21,18,.75),rgba(27,21,18,.92))}
+ .lock{height:90px}
+ .topo a.cta-s{display:none}
+}
+</style>
+</head>
+<body>
+<header class="topo"><div class="w">
+ <div class="marca"><img src="./logo-gt-mark.png" alt="">MBA GESTÃO ESTRATÉGICA DE VALOR</div>
+ <a class="cta-s" href="#inscricao">INSCREVER-SE</a>
+</div></header>
+
+<section class="hero"><div class="w">
+ <img class="lock" src="./logo-mba-lockup.png" alt="MBA em Gestão Estratégica de Valor">
+ <div class="tarja">LIVE DE LANÇAMENTO · TURMA 2</div>
+ <h1>MBA em Gestão Estratégica de Valor: <em>a Turma 2 está lançada</em></h1>
+ <p class="lede">Uma hora ao vivo, gratuita, para conhecer o programa, o que a primeira turma já construiu e como a Turma 2 começa em março de 2027.</p>
+ <div class="chips">
+  <div class="chip"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M8 2v3" />
+  <path d="M16 2v3" />
+  <rect x="3" y="3" width="18" height="18" rx="2" />
+  <path d="M3 9h18" />
+</svg>Terça, 17 de novembro</div>
+  <div class="chip"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 6v6l4 2" />
+</svg>19h30 (Brasília)</div>
+  <div class="chip"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+  <rect x="2" y="6" width="14" height="12" rx="2" />
+</svg>Zoom · inscrição gratuita</div>
+ </div>
+ <a class="btn" href="#inscricao">Garantir minha vaga na live <svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></a>
+ <div class="cont" id="cont"></div>
+</div></section>
+
+<section class="s"><div class="w">
+ <div class="sob">01 · POR QUE VALOR</div>
+ <h2>Projetos, processos e a própria estratégia são meios. <em>O fim é o valor.</em></h2>
+ <div class="dois">
+  <div class="txt">
+   <p>Durante décadas, as organizações aprenderam a medir o trabalho pelo que ele consome: prazo, custo, escopo, quantidade de entregas. São métricas de eficiência, importantes e insuficientes, porque nenhuma delas responde à pergunta que mais importa: <strong>para que serve o que estamos fazendo?</strong></p>
+   <p>A 8ª edição do Guia PMBOK, publicada pelo PMI em 2025, levou essa pergunta para dentro da própria definição de projeto, que passou a ser descrito como <strong>uma iniciativa temporária para gerar valor</strong>. Uma iniciativa que não existe para criar valor deixa de atender à definição de projeto.</p>
+   <p>O MBA em Gestão Estratégica de Valor nasceu dessa percepção: há muitos cursos sobre os meios (ferramentas, processos, metodologias) e quase nenhum sobre o fim. O programa ensina a <strong>construir, medir e sustentar valor</strong> em cinco dimensões: financeira, do cliente, da execução, social e humana.</p>
+  </div>
+  <div>
+   <div class="cartao">
+    <div class="cit">“Projetos bem-sucedidos entregam valor que justifica o esforço e o investimento.”</div>
+    <div class="fonte">PMI, Project Success Report, 2024</div>
+    <div style="margin-top:26px" class="num">48%</div>
+    <div class="barra"><i></i></div>
+    <div style="font-size:15px">dos projetos avaliados alcançaram esse padrão de sucesso, na maior pesquisa do PMI sobre o tema.</div>
+    <div class="fonte">PMI, Reframing Project Success, 2024</div>
+   </div>
+  </div>
+ </div>
+</div></section>
+
+<section class="s" style="padding-top:0"><div class="w">
+ <div class="sob" style="color:var(--pet)">02 · O PROGRAMA</div>
+ <h2>Um MBA inteiro dedicado a <em>gerar e medir valor</em></h2>
+ <div class="stats">
+  <div class="stat"><b>18</b><span>meses de programa</span></div>
+  <div class="stat"><b>380 h</b><span>de atividades acadêmicas</span></div>
+  <div class="stat"><b>38</b><span>disciplinas, uma delas de integração</span></div>
+  <div class="stat"><b>5</b><span>trilhas temáticas</span></div>
+ </div>
+ <div class="trilhas">
+  <div class="tr" style="background:#B04A1C"><small>TRILHA 1</small><strong>Fundamentos Estratégicos do Valor</strong></div>
+  <div class="tr" style="background:#B5781E"><small>TRILHA 2</small><strong>Valor para Clientes, Usuários e Produtos</strong></div>
+  <div class="tr" style="background:#2F6B6F"><small>TRILHA 3</small><strong>Projetos e Governança de Valor</strong></div>
+  <div class="tr" style="background:#5E7D52"><small>TRILHA 4</small><strong>Valor Social e Sustentável</strong></div>
+  <div class="tr" style="background:#7A4E6D"><small>TRILHA 5</small><strong>Valor Humano e Organizacional</strong></div>
+ </div>
+ <div class="aviso"><div class="disco"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="18" cy="18" r="3" />
+  <circle cx="6" cy="6" r="3" />
+  <path d="M6 21V9a9 9 0 0 0 9 9" />
+</svg></div><div><strong style="color:#F0A47D">Turma 2:</strong> início em março de 2027, com a Aula Magna. A turma começa pela Trilha 4, nas mesmas aulas ao vivo da Turma 1, e segue depois para as Trilhas 1, 2 e 3 e a disciplina de integração. Aulas ao vivo às terças, das 19h às 22h.</div></div>
+</div></section>
+
+<section class="s escura"><div class="w">
+ <div class="sob">03 · NA LIVE</div>
+ <h2>O que será apresentado <em>nesta hora ao vivo</em></h2>
+ <div class="itens">
+  <div class="item"><div class="disco" style="background:#B04A1C"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 7h6v6" />
+  <path d="m22 7-8.5 8.5-5-5L2 17" />
+</svg></div><h3>Por que valor</h3><p>A nova definição de sucesso de projeto e o que ela muda nas decisões das organizações.</p></div>
+  <div class="item"><div class="disco" style="background:#2F6B6F"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16 6 4 14" />
+  <path d="M12 6v14" />
+  <path d="M8 8v12" />
+  <path d="M4 4v16" />
+</svg></div><h3>O programa</h3><p>As cinco trilhas, a estrutura de cada disciplina e os recursos da plataforma Pionira.</p></div>
+  <div class="item"><div class="disco" style="background:#B5781E"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+  <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+  <circle cx="9" cy="7" r="4" />
+</svg></div><h3>A Turma 1</h3><p>Quinze disciplinas concluídas desde abril de 2026, por profissionais de todo o Brasil.</p></div>
+  <div class="item"><div class="disco" style="background:#35608F"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="18" cy="18" r="3" />
+  <circle cx="6" cy="6" r="3" />
+  <path d="M6 21V9a9 9 0 0 0 9 9" />
+</svg></div><h3>A Turma 2</h3><p>Como a nova turma começa ao lado da Turma 1 e percorre as 38 disciplinas.</p></div>
+  <div class="item"><div class="disco" style="background:#7A4E6D"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 21h8" />
+  <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+</svg></div><h3>Modalidades e inscrição</h3><p>As quatro modalidades, a vaga social e o pacote de pré-matrícula.</p></div>
+  <div class="item"><div class="disco" style="background:#E5662C"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
+  <path d="M7 11h10" />
+  <path d="M7 15h6" />
+  <path d="M7 7h8" />
+</svg></div><h3>Perguntas ao vivo</h3><p>Tempo reservado para perguntas, contribuições e aplicações da audiência.</p></div>
+ </div>
+ <div class="quem"><img src="./logo-gt-mark.png" alt="" style="height:54px"><p><strong style="color:var(--creme)">Com Gino Terentim</strong>, idealizador e coordenador do MBA, doutor pela Université de Bordeaux, estudante de Harvard (Harvard Extension School) e coautor do Guia PMBOK, 7ª edição.</p></div>
+</div></section>
+
+<section class="s form-s" id="inscricao"><div class="w">
+ <div class="lado">
+  <div class="sob">INSCRIÇÃO GRATUITA</div>
+  <h2>Reserve sua vaga <em>na live de 17 de novembro</em></h2>
+  <p>Terça-feira, 17 de novembro de 2026, às 19h30 (horário de Brasília), no Zoom.</p>
+  <p>Ao concluir a inscrição, o link de acesso aparece nesta página e chega também ao seu e-mail.</p>
+ </div>
+ <div>
+  <form id="f" novalidate>
+   <div class="lin">
+    <div><label for="NOME">Nome</label><input type="text" id="NOME" name="NOME" autocomplete="given-name" required></div>
+    <div><label for="SOBRENOME">Sobrenome</label><input type="text" id="SOBRENOME" name="SOBRENOME" autocomplete="family-name" required></div>
+   </div>
+   <label for="WHATSAPP">WhatsApp</label>
+   <div class="tel"><span>+55</span><input type="tel" id="WHATSAPP" name="WHATSAPP" placeholder="61 99999-9999" autocomplete="tel-national" required></div>
+   <label for="EMAIL">E-mail</label>
+   <input type="email" id="EMAIL" name="EMAIL" autocomplete="email" required>
+   <div class="lgpd"><input type="checkbox" id="ACEITE" required><label for="ACEITE" style="margin:0;font-weight:400;font-size:13px;color:var(--corpo)">Autorizo o uso dos meus dados para receber o link e as comunicações do MBA em Gestão Estratégica de Valor. Os dados não são compartilhados com terceiros, e o descadastro está disponível em todo e-mail.</label></div>
+   <button class="btn" type="submit" id="bt">Garantir minha vaga <svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+   <div class="erro" id="erro">Preencha todos os campos e confirme a autorização para concluir a inscrição.</div>
+  </form>
+  <div class="ok" id="ok">
+   <div class="disco"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 6 9 17l-5-5" />
+</svg></div>
+   <h3>Vaga garantida</h3>
+   <p>Nos vemos na terça-feira, 17 de novembro, às 19h30 (Brasília). Guarde o link de acesso e adicione o compromisso à sua agenda.</p>
+   <div class="acoes">
+    <a class="btn" href="https://us02web.zoom.us/j/87863787431?pwd=hevxhkb7rR4VSOkuga5Dsvd0Fn0wYZ.1" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+  <rect x="2" y="6" width="14" height="12" rx="2" />
+</svg>Link da live no Zoom</a>
+    <a class="btn sec" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Live%20de%20lan%C3%A7amento%20%C2%B7%20MBA%20em%20Gest%C3%A3o%20Estrat%C3%A9gica%20de%20Valor%20(Turma%202)&dates=20261117T223000Z/20261118T000000Z&details=Zoom%3A%20https%3A%2F%2Fus02web.zoom.us%2Fj%2F87863787431%3Fpwd%3Dhevxhkb7rR4VSOkuga5Dsvd0Fn0wYZ.1&location=Zoom" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M8 2v3" />
+  <path d="M16 2v3" />
+  <rect x="3" y="3" width="18" height="18" rx="2" />
+  <path d="M3 9h18" />
+</svg>Adicionar ao Google Agenda</a>
+    <a class="btn sec" href="live-mba-turma2.ics" download><svg class="ic" aria-hidden="true"
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M8 2v3" />
+  <path d="M16 2v3" />
+  <rect x="3" y="3" width="18" height="18" rx="2" />
+  <path d="M3 9h18" />
+</svg>Baixar convite (Outlook, Apple)</a>
+   </div>
+  </div>
+ </div>
+</div></section>
+
+<footer><div class="w">
+ <img class="lock" src="./logo-mba-lockup.png" alt="MBA em Gestão Estratégica de Valor">
+ <p class="frase">Construir, medir e sustentar valor em todas as suas dimensões.</p>
+ <a href="https://mba.ginoterentim.com/" target="_blank" rel="noopener">mba.ginoterentim.com</a>
+ <small>Gino Terentim · Rethinking Learning · Plataforma Pionira</small>
+</div></footer>
+
+<script>
+(function(){
+ var alvo=new Date('2026-11-17T19:30:00-03:00').getTime(), c=document.getElementById('cont');
+ function t(){var d=alvo-Date.now(); if(d<=0){c.innerHTML='<div><b>Ao vivo</b><span>AGORA</span></div>';return;}
+  var D=Math.floor(d/864e5),H=Math.floor(d%864e5/36e5),M=Math.floor(d%36e5/6e4);
+  c.innerHTML='<div><b>'+D+'</b><span>DIAS</span></div><div><b>'+H+'</b><span>HORAS</span></div><div><b>'+M+'</b><span>MIN</span></div>';}
+ t(); setInterval(t,30000);
+ var f=document.getElementById('f');
+ f.addEventListener('submit',function(e){
+  e.preventDefault();
+  var ok=['NOME','SOBRENOME','WHATSAPP','EMAIL'].every(function(i){return document.getElementById(i).value.trim()}) && document.getElementById('ACEITE').checked && /.+@.+\..+/.test(document.getElementById('EMAIL').value);
+  document.getElementById('erro').style.display=ok?'none':'block'; if(!ok) return;
+  var b=document.getElementById('bt'); b.disabled=true; b.firstChild.nodeValue='Enviando... ';
+  var fd=new FormData();
+  fd.append('NOME',document.getElementById('NOME').value.trim());
+  fd.append('SOBRENOME',document.getElementById('SOBRENOME').value.trim());
+  fd.append('WHATSAPP__COUNTRY_CODE','+55');
+  fd.append('WHATSAPP',document.getElementById('WHATSAPP').value.replace(/\D/g,''));
+  fd.append('EMAIL',document.getElementById('EMAIL').value.trim());
+  fd.append('email_address_check',''); fd.append('locale','pt'); fd.append('html_type','simple');
+  var fim=function(){f.style.display='none'; document.getElementById('ok').style.display='block'; document.getElementById('ok').scrollIntoView({behavior:'smooth',block:'center'});};
+  fetch('https://efc33a6d.sibforms.com/serve/MUIFAG_Ki4XKruk3GKUpsrvW_YBbsYa4Yp7oIFXDi27OW_Et5qh0hHA9ebbV5LEHLERCFW9-tJwE7wy0RLaj7gb8d_k31AI_uTb-oboSyT-SWIA-wgf1xnc4P_lKz18XaneTGRQs53Ke0vN71IVvdLZqdn-K7qcze-GxO3wcdDsz_p4vVE8cddCOahHAJgiBzaRVirBHiMd4jESq?isAjax=1',{method:'POST',body:fd,mode:'no-cors'}).then(fim).catch(fim);
+ });
+})();
+</script>
+</body>
+</html>
