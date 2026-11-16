@@ -488,17 +488,25 @@ footer a{color:var(--lar);text-decoration:none}
  f.addEventListener('submit',function(e){
   e.preventDefault();
   var ok=['NOME','SOBRENOME','WHATSAPP','EMAIL'].every(function(i){return document.getElementById(i).value.trim()}) && document.getElementById('ACEITE').checked && /.+@.+\..+/.test(document.getElementById('EMAIL').value);
-  document.getElementById('erro').style.display=ok?'none':'block'; if(!ok) return;
+  var er0=document.getElementById('erro'); er0.textContent='Preencha todos os campos e confirme a autorização para concluir a inscrição.'; er0.style.display=ok?'none':'block'; if(!ok) return;
   var b=document.getElementById('bt'); b.disabled=true; b.firstChild.nodeValue='Enviando... ';
-  var fd=new FormData();
-  fd.append('NOME',document.getElementById('NOME').value.trim());
-  fd.append('SOBRENOME',document.getElementById('SOBRENOME').value.trim());
-  fd.append('WHATSAPP__COUNTRY_CODE','+55');
-  fd.append('WHATSAPP',document.getElementById('WHATSAPP').value.replace(/\D/g,''));
-  fd.append('EMAIL',document.getElementById('EMAIL').value.trim());
-  fd.append('email_address_check',''); fd.append('locale','pt'); fd.append('html_type','simple');
+  var URL='https://efc33a6d.sibforms.com/serve/MUIFAG_Ki4XKruk3GKUpsrvW_YBbsYa4Yp7oIFXDi27OW_Et5qh0hHA9ebbV5LEHLERCFW9-tJwE7wy0RLaj7gb8d_k31AI_uTb-oboSyT-SWIA-wgf1xnc4P_lKz18XaneTGRQs53Ke0vN71IVvdLZqdn-K7qcze-GxO3wcdDsz_p4vVE8cddCOahHAJgiBzaRVirBHiMd4jESq?isAjax=1';
+  var monta=function(comFone){var fd=new URLSearchParams();
+   fd.append('NOME',document.getElementById('NOME').value.trim());
+   fd.append('SOBRENOME',document.getElementById('SOBRENOME').value.trim());
+   if(comFone){fd.append('WHATSAPP__COUNTRY_CODE','+55'); fd.append('WHATSAPP',document.getElementById('WHATSAPP').value.replace(/\D/g,''));}
+   fd.append('EMAIL',document.getElementById('EMAIL').value.trim());
+   fd.append('email_address_check',''); fd.append('locale','pt'); fd.append('html_type','simple'); return fd;};
   var fim=function(){f.style.display='none'; document.getElementById('ok').style.display='block'; document.getElementById('ok').scrollIntoView({behavior:'smooth',block:'center'});};
-  fetch('https://efc33a6d.sibforms.com/serve/MUIFAG_Ki4XKruk3GKUpsrvW_YBbsYa4Yp7oIFXDi27OW_Et5qh0hHA9ebbV5LEHLERCFW9-tJwE7wy0RLaj7gb8d_k31AI_uTb-oboSyT-SWIA-wgf1xnc4P_lKz18XaneTGRQs53Ke0vN71IVvdLZqdn-K7qcze-GxO3wcdDsz_p4vVE8cddCOahHAJgiBzaRVirBHiMd4jESq?isAjax=1',{method:'POST',body:fd,mode:'no-cors'}).then(fim).catch(fim);
+  var falha=function(msg){b.disabled=false; b.firstChild.nodeValue='Garantir minha vaga '; var er=document.getElementById('erro'); er.textContent=msg; er.style.display='block';};
+  var envia=function(comFone){return fetch(URL,{method:'POST',body:monta(comFone)}).then(function(r){return r.json();});};
+  envia(true).then(function(j){
+   if(j && j.success) return fim();
+   var e=(j && j.errors)||{};
+   if(e.WHATSAPP && !e.EMAIL){return envia(false).then(function(k){ if(k && k.success) fim(); else falha('Não foi possível concluir a inscrição. Confira o e-mail informado e tente novamente.');});}
+   if(e.EMAIL) return falha('Confira o e-mail informado: '+e.EMAIL);
+   falha('Não foi possível concluir a inscrição. Tente novamente em instantes.');
+  }).catch(fim);
  });
 })();
 </script>
